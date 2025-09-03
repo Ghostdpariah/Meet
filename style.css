@@ -41,6 +41,12 @@ nav {
   color: white;
 }
 
+.hero-item button:hover {
+  background-color: transparent;
+  border: 1px solid black;
+  color: #000;
+}
+
 .hero-buttons {
   display: flex;
   width: 100%;
@@ -53,6 +59,9 @@ nav {
   background-color: #8561ad;
 }
 
+/* First Page Break */
+
+/* Fawzaan's */
 .zero-one-container {
   display: grid;
   grid-template-rows: 1fr 1fr;
@@ -68,11 +77,34 @@ nav {
 }
 
 .zero-one-container span {
-  border: 1px solid rgb(0, 0, 0);
+  border: 1px solid #000;
   width: fit-content;
-  padding: 10px;
+  padding: 10px 14px;
   border-radius: 100%;
 }
+
+/* Lanre's
+.pendulum {
+  margin-top: 20px;
+}
+
+.pendulum .vertical-line {
+  width: 50%;
+  height: 70px;
+  border-right: 1px solid #000;
+}
+
+.pendulum .zero-one-wrapper {
+  text-align: center;
+}
+
+.pendulum .zero-one {
+  padding: 10px 12px;
+  border: 1px solid #000;
+  background-color: #fff;
+  border-radius: 50%; */
+
+/* Gallery */
 
 .gallery-image-container {
   display: grid;
@@ -88,6 +120,8 @@ nav {
   border-radius: 50px;
 }
 
+/* Main content */
+
 .main-content {
   text-align: center;
   padding-bottom: 40px;
@@ -99,6 +133,8 @@ nav {
   font-size: 15px;
   color: #4996a6;
 }
+
+/* Second Page Break */
 
 .zero-two-container {
   display: grid;
@@ -117,9 +153,11 @@ nav {
 .zero-two-container span {
   border: 1px solid rgb(0, 0, 0);
   width: fit-content;
-  padding: 10px;
+  padding: 10px 12px;
   border-radius: 100%;
 }
+
+/* Footer */
 
 footer {
   background-size: cover;
@@ -145,4 +183,10 @@ footer .footer-item {
   border: 0;
   border-radius: 40px;
   color: white;
+}
+
+.footer-item button:hover {
+  background-color: #fff;
+  border: 1px solid #000;
+  color: #000;
 }
