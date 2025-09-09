@@ -20,6 +20,10 @@ nav {
   text-align: center;
 }
 
+.hero-background {
+  display: none;
+}
+
 .hero-item {
   text-align: center;
 }
@@ -32,13 +36,14 @@ nav {
 .hero-item button {
   text-decoration: none;
   background-color: #4996a6;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  padding-right: 40px;
-  padding-left: 40px;
+  padding: 15px 35px;
   border: 0;
   border-radius: 40px;
   color: white;
+}
+
+.hero-buttons-mobile {
+  display: none;
 }
 
 .hero-item button:hover {
@@ -62,6 +67,13 @@ nav {
 /* First Page Break */
 
 /* Fawzaan's */
+.zero-one-container-mobile {
+  display: none;
+}
+
+.zero-two-container-mobile {
+  display: none;
+}
 .zero-one-container {
   display: grid;
   grid-template-rows: 1fr 1fr;
@@ -189,4 +201,199 @@ footer .footer-item {
   background-color: #fff;
   border: 1px solid #000;
   color: #000;
+}
+
+@media (max-width: 576px) {
+  nav {
+    background-color: #fff;
+    text-align: center;
+    width: 100%;
+    position: fixed;
+    top: 0;
+  }
+
+  .hero-section {
+    margin-top: 100px;
+  }
+  .hero-section img {
+    display: none;
+  }
+
+  .hero-item h1 {
+    font-size: 32px;
+  }
+  .hero-section {
+    display: block;
+  }
+
+  .hero-buttons {
+    display: grid;
+    grid-row: 1fr 1fr;
+    margin-top: 20px;
+  }
+
+  .zero-one-container {
+    display: none;
+  }
+
+  .hero-section .hero-item p {
+    width: 60%;
+    margin: auto;
+  }
+
+  .gallery-image-container {
+    display: block;
+    text-align: center;
+  }
+
+  .gallery-image-container img {
+    margin-bottom: 15px;
+  }
+
+  .main-content p {
+    width: 80%;
+    margin: auto;
+  }
+
+  footer {
+    background-image: linear-gradient(
+        rgba(74, 150, 166, 0.6),
+        rgba(74, 150, 166, 0.6)
+      ),
+      url(images/background\ image.jpg);
+    background-position: 50%;
+  }
+
+  .zero-one-container-mobile {
+    display: flex;
+    gap: 50px;
+    margin-top: 50px;
+    /* grid-template-columns: 1fr 1fr 1fr; */
+  }
+
+  .zero-one-container-mobile .hl {
+    width: 40%;
+    height: 1px;
+    background-color: #000;
+    margin: auto;
+  }
+
+  .zero-one-container-mobile span {
+    border: 1px solid #000;
+    width: fit-content;
+    padding: 10px 14px;
+    border-radius: 100%;
+  }
+
+  .zero-two-container-mobile {
+    display: block;
+  }
+
+  .zero-two-container {
+    display: none;
+  }
+
+  .zero-two-container-mobile {
+    display: flex;
+    gap: 50px;
+    margin-top: 50px;
+  }
+
+  .zero-two-container-mobile .hl {
+    width: 40%;
+    height: 1px;
+    background-color: #000;
+    margin: auto;
+  }
+
+  .zero-two-container-mobile span {
+    border: 1px solid #000;
+    width: fit-content;
+    padding: 10px 14px;
+    border-radius: 100%;
+  }
+}
+
+@media (min-width: 577px) and (max-width: 991px) {
+  nav {
+    background-color: #fff;
+    text-align: center;
+    width: 100%;
+    position: fixed;
+    top: 0;
+  }
+
+  header .hero-section {
+    display: block;
+    margin-top: 50px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+      url(images/herooo-image1.png);
+    background-position: 50%;
+    padding: 20px;
+    width: 100%;
+  }
+
+  header .hero-item h1 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #fff;
+    padding-top: 10px;
+  }
+
+  header .hero-item p {
+    color: #fff;
+    width: 70%;
+    margin: auto;
+  }
+
+  .hero-section img {
+    display: none;
+  }
+
+  .hero-item button {
+    padding: 15px 35px;
+    margin-top: 20px;
+  }
+}
+
+@media (min-width: 993px) and (max-width: 1200px) {
+  nav {
+    background-color: #fff;
+    text-align: center;
+    width: 100%;
+    position: fixed;
+    top: 0;
+  }
+
+  header .hero-section {
+    display: block;
+    margin-top: 50px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+      url(images/herooo-image1.png);
+    background-position: 50%;
+    padding: 20px;
+    width: 100%;
+  }
+
+  header .hero-item h1 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #fff;
+    padding-top: 10px;
+  }
+
+  header .hero-item p {
+    color: #fff;
+    width: 70%;
+    margin: auto;
+  }
+
+  .hero-section img {
+    display: none;
+  }
+
+  .hero-item button {
+    padding: 15px 35px;
+    margin-top: 20px;
+  }
 }
