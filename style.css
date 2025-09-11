@@ -71,6 +71,11 @@ nav {
   display: none;
 }
 
+.main-content p {
+  width: 70%;
+  margin: auto;
+}
+
 .zero-two-container-mobile {
   display: none;
 }
@@ -203,6 +208,8 @@ footer .footer-item {
   color: #000;
 }
 
+/* Mobile Responsiveness */
+
 @media (max-width: 576px) {
   nav {
     background-color: #fff;
@@ -255,27 +262,19 @@ footer .footer-item {
     margin: auto;
   }
 
-  footer {
-    background-image: linear-gradient(
-        rgba(74, 150, 166, 0.6),
-        rgba(74, 150, 166, 0.6)
-      ),
-      url(images/background\ image.jpg);
-    background-position: 50%;
-  }
-
   .zero-one-container-mobile {
     display: flex;
-    gap: 50px;
+    gap: 20px;
     margin-top: 50px;
-    /* grid-template-columns: 1fr 1fr 1fr; */
   }
 
   .zero-one-container-mobile .hl {
-    width: 40%;
+    width: 35%;
     height: 1px;
     background-color: #000;
     margin: auto;
+    margin-left: 20px;
+    margin-right: 20px;
   }
 
   .zero-one-container-mobile span {
@@ -295,15 +294,17 @@ footer .footer-item {
 
   .zero-two-container-mobile {
     display: flex;
-    gap: 50px;
+    gap: 20px;
     margin-top: 50px;
   }
 
   .zero-two-container-mobile .hl {
-    width: 40%;
+    width: 35%;
     height: 1px;
     background-color: #000;
     margin: auto;
+    margin-left: 20px;
+    margin-right: 20px;
   }
 
   .zero-two-container-mobile span {
@@ -312,7 +313,18 @@ footer .footer-item {
     padding: 10px 14px;
     border-radius: 100%;
   }
+
+  footer {
+    background-image: linear-gradient(
+        rgba(74, 150, 166, 0.6),
+        rgba(74, 150, 166, 0.6)
+      ),
+      url(images/background\ image.jpg);
+    background-position: 50%;
+  }
 }
+
+/* Tablet */
 
 @media (min-width: 577px) and (max-width: 991px) {
   nav {
@@ -353,6 +365,69 @@ footer .footer-item {
   .hero-item button {
     padding: 15px 35px;
     margin-top: 20px;
+  }
+
+  .gallery-image-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    text-align: center;
+  }
+
+  .gallery-image-container img {
+    margin-bottom: 15px;
+  }
+
+  .zero-one-container {
+    display: none;
+  }
+
+  .zero-one-container-mobile {
+    display: flex;
+    gap: 20px;
+    margin-top: 50px;
+  }
+
+  .zero-one-container-mobile .hl {
+    width: 35%;
+    height: 1px;
+    background-color: #000;
+    margin: auto;
+  }
+
+  .zero-one-container-mobile span {
+    border: 1px solid #000;
+    width: fit-content;
+    padding: 10px 14px;
+    border-radius: 100%;
+  }
+
+  .main-content p {
+    width: 80%;
+    margin: auto;
+  }
+
+  .zero-two-container {
+    display: none;
+  }
+
+  .zero-two-container-mobile {
+    display: flex;
+    gap: 50px;
+    margin-top: 50px;
+  }
+
+  .zero-two-container-mobile .hl {
+    width: 35%;
+    height: 1px;
+    background-color: #000;
+    margin: auto;
+  }
+
+  .zero-two-container-mobile span {
+    border: 1px solid #000;
+    width: fit-content;
+    padding: 10px 14px;
+    border-radius: 100%;
   }
 }
 
@@ -395,5 +470,63 @@ footer .footer-item {
   .hero-item button {
     padding: 15px 35px;
     margin-top: 20px;
+  }
+
+  .zero-one-container {
+    display: none;
+  }
+  .zero-two-container {
+    display: none;
+  }
+
+  .zero-one-container-mobile {
+    display: flex;
+    gap: 20px;
+    margin-top: 50px;
+  }
+
+  .zero-one-container-mobile .hl {
+    width: 35%;
+    height: 1px;
+    background-color: #000;
+    margin: auto;
+  }
+
+  .zero-one-container-mobile span {
+    border: 1px solid #000;
+    width: fit-content;
+    padding: 10px 14px;
+    border-radius: 100%;
+  }
+
+  .main-content p {
+    width: 70%;
+    margin: auto;
+  }
+
+  .gallery-image-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    text-align: center;
+  }
+
+  .zero-two-container-mobile {
+    display: flex;
+    gap: 20px;
+    margin-top: 50px;
+  }
+
+  .zero-two-container-mobile .hl {
+    width: 35%;
+    height: 1px;
+    background-color: #000;
+    margin: auto;
+  }
+
+  .zero-two-container-mobile span {
+    border: 1px solid #000;
+    width: fit-content;
+    padding: 10px 14px;
+    border-radius: 100%;
   }
 }
